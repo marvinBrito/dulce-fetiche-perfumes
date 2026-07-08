@@ -1,0 +1,8 @@
+{
+  "name": "Luxe Parfums",
+  "description": "Boutique de alta perfumería con visualización 3D interactiva de frascos y venta de perfumes fraccionados.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
