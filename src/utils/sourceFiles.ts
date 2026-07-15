@@ -149,7 +149,7 @@ export default function DecantsExplainer({ portionName, setPortionName, perfumes
                   <span className="text-[10px] bg-[#8E7860]/10 text-[#8E7860] px-2 py-0.5 rounded-full font-mono font-bold leading-none">
                     {p.decantMl || 10}ml
                   </span>
-                  <span className="text-xs text-[#2E251E] font-black font-mono mt-1">S/. {p.priceDecant?.toFixed(2)}</span>
+                  <span className="text-xs text-[#2E251E] font-black font-mono mt-1">\${p.priceDecant?.toFixed(2)}</span>
                 </div>
               </div>
             ))}

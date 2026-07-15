@@ -302,14 +302,14 @@ export default function App() {
                           <div className="flex flex-wrap gap-1">
                             {p.decantOptions.map((opt) => (
                               <span key={opt.ml} className="bg-[#8E7860]/5 border border-[#8E7860]/20 text-[#5C4D40] px-1.5 py-0.5 rounded-md text-[9px] font-mono whitespace-nowrap">
-                                <strong>{opt.ml}ml</strong> S/. {opt.price.toFixed(2)}
+                                <strong>{opt.ml}ml</strong> ${opt.price.toFixed(2)}
                               </span>
                             ))}
                           </div>
                         </div>
                       )}
                       <div className="text-[10px] text-[#5C4D3E]">
-                        Frasco 100ml: <strong className="text-[#8E7860] font-black">S/. {p.priceFull.toFixed(2)}</strong>
+                        Frasco 100ml: <strong className="text-[#8E7860] font-black">${p.priceFull.toFixed(2)}</strong>
                       </div>
                     </div>
 

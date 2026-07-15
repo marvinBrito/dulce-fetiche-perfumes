@@ -35,7 +35,7 @@ export default function PerfumeDetailModal({ perfume, onClose, portionName, cont
 🌟 Producto: ${perfume.name} (${perfume.brand})
 🧪 Formato: ${formatText}
 📦 Cantidad: ${quantity} unidad(es)
-💵 Total estimado: S/. ${total.toFixed(2)}
+💵 Total estimado: $${total.toFixed(2)}
 -------------------------------------
 Por favor, confírmame disponibilidad para coordinar la entrega segura o envío a domicilio de mi pedido. Gracias!`;
 
@@ -140,7 +140,7 @@ Por favor, confírmame disponibilidad para coordinar la entrega segura o envío 
                     <span className="text-[#7A6D60] text-xs font-bold ml-1.5 font-mono">seleccionado</span>
                   </div>
                   <div className="mt-1 text-sm font-black text-[#8E7860]">
-                    S/. {selectedDecant.price.toFixed(2)}
+                    ${selectedDecant.price.toFixed(2)}
                   </div>
                 </button>
               )}
@@ -163,7 +163,7 @@ Por favor, confírmame disponibilidad para coordinar la entrega segura o envío 
                   <span className="text-[#7A6D60] text-xs font-bold ml-1.5 font-mono">sellado original</span>
                 </div>
                 <div className="mt-1 text-sm font-black text-[#2E251E]">
-                  S/. {perfume.priceFull.toFixed(2)}
+                  ${perfume.priceFull.toFixed(2)}
                 </div>
               </button>
             </div>
@@ -186,7 +186,7 @@ Por favor, confírmame disponibilidad para coordinar la entrega segura o envío 
                       }`}
                     >
                       <span className="text-xs font-black text-[#2E251E]">{opt.ml} ml</span>
-                      <span className="text-[10px] font-mono font-bold text-[#8E7860]">S/. {opt.price.toFixed(2)}</span>
+                      <span className="text-[10px] font-mono font-bold text-[#8E7860]">${opt.price.toFixed(2)}</span>
                     </button>
                   ))}
                 </div>
@@ -250,7 +250,7 @@ Por favor, confírmame disponibilidad para coordinar la entrega segura o envío 
             <div className="text-left">
               <div className="text-[10px] uppercase font-bold text-[#8C7B6E] tracking-wider">Total estimado</div>
               <div className="text-2xl font-black text-[#8E7860] font-mono">
-                S/. {total.toFixed(2)}
+                ${total.toFixed(2)}
               </div>
             </div>
 
