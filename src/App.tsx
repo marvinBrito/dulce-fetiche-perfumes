@@ -111,63 +111,6 @@ export default function App() {
 
       {/* Main Container */}
       <main className="max-w-7xl mx-auto px-4 md:px-6 py-8">
-        
-        {/* HERO COVER STAGE */}
-        <section className="relative rounded-3xl overflow-hidden mb-12 bg-[#FAF6EE] border border-[#DECFC0] p-8 md:p-12 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-8 shadow-sm">
-          <div className="absolute top-0 left-0 w-96 h-96 bg-[#8E7860]/5 rounded-full blur-3xl pointer-events-none" />
-          
-          <div className="max-w-xl">
-            <span className="text-[9px] font-black tracking-widest text-[#8E7860] uppercase bg-[#8E7860]/10 px-3.5 py-1.5 rounded-full inline-block mb-4 border border-[#8E7860]/20">
-              ⚜️ Perfumes de Diseñador & Muestras Fraccionadas
-            </span>
-            <h2 className="text-3xl md:text-5xl font-black text-[#2E251E] leading-none tracking-tight mb-4">
-              La Esencia del Lujo, <br className="hidden md:block" /> a tu Alcance
-            </h2>
-            <p className="text-sm text-[#5C4D40] leading-relaxed mb-6">
-              Explora místicas y legendarias fragancias en envase tradicional completo, o adquiérelas en cómodas porciones <strong className="text-[#8E7860]">{portionName}</strong> preparadas asépticamente bajo estándares de alta clase. Lujo accesible y con total garantía.
-            </p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
-              <div className="bg-white/60 p-3 rounded-2xl border border-[#DECFC0]">
-                <div className="text-[#4E6254] font-bold text-xs uppercase tracking-wider mb-0.5 flex items-center gap-1">
-                  <ShieldCheck className="w-3.5 h-3.5 text-[#4E6254]" /> 100% Auténtico
-                </div>
-                <p className="text-[10px] text-[#7A6D60]">Líquidos originales extraídos de forma directa.</p>
-              </div>
-              <div className="bg-white/60 p-3 rounded-2xl border border-[#DECFC0]">
-                <div className="text-[#8E7860] font-bold text-xs uppercase tracking-wider mb-0.5 flex items-center gap-1">
-                  <MapPin className="w-3.5 h-3.5" /> Entregas Seguras
-                </div>
-                <p className="text-[10px] text-[#7A6D60]">Envíos programados ó entrega resguardada.</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-white border border-[#DECFC0] rounded-3xl p-6 w-full max-w-sm flex flex-col gap-4 shadow-sm">
-            <h3 className="text-xs uppercase tracking-widest text-[#8C7B6E] font-bold pb-2 border-b border-[#EBE4D5]">
-              💬 Asesoría y Consultas
-            </h3>
-            <p className="text-xs text-[#5C4D3E] leading-relaxed">
-              ¿Quieres un catálogo en PDF, buscas una fragancia específica de nicho que no está listada, o deseas coordinar un pedido al instante? 
-            </p>
-            <a 
-              href={`https://wa.me/${contactPhone.replace(/\D/g, "")}`}
-              target="_blank"
-              rel="noreferrer"
-              className="bg-[#3F5144] hover:bg-[#2C3B30] text-[#FAF7F2] font-semibold tracking-wider uppercase py-3.5 rounded-xl transition-colors flex items-center justify-center gap-2 text-[11px] font-bold"
-            >
-              <MessageSquare className="w-3.5 h-3.5 fill-current" />
-              Chatear Directo por WhatsApp
-            </a>
-          </div>
-        </section>
-
-        {/* DECANT EDUCATIONAL EXPLAINER */}
-        <DecantsExplainer 
-          portionName={portionName} 
-          perfumes={perfumes}
-          onSelectPerfume={(perfume) => setSelectedPerfume(perfume)}
-        />
 
         {/* SEARCH AND VINTAGE FILTERS */}
         <section className="bg-[#FAF6EE] border border-[#DECFC0] p-6 rounded-3xl mb-8">
@@ -251,25 +194,36 @@ export default function App() {
                       </div>
                     </div>
 
-                    {/* Miniature interactive preview box */}
+                    {/* Perfume image preview */}
                     <div 
-                      className="h-44 w-full rounded-2xl relative mb-4 overflow-hidden flex items-center justify-center p-3 border border-[#EBE4D5]"
+                      className="h-56 w-full rounded-2xl relative mb-4 overflow-hidden flex items-end justify-start border border-[#EBE4D5]"
                       style={{ background: p.boxColor }}
                     >
-                      <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/5 to-white/0" />
-                      <div className="absolute bottom-3 left-3 z-10">
-                        <span className="bg-[#1C1714]/80 px-2 py-0.5 rounded text-[8px] font-mono tracking-widest text-[#FAF7F2] border border-white/5">
-                          CLAVE 3D
-                        </span>
-                      </div>
-                      
-                      <span className="text-4xl text-white/10 group-hover:scale-125 transition-transform duration-300 font-bold select-none absolute">
-                        ⚜️
-                      </span>
-                      
-                      <div className="text-center z-10 p-2.5 bg-[#FAF7F2]/10 backdrop-blur-[0.5px] rounded-xl border border-white/10">
-                        <h4 className="text-sm font-black text-white uppercase tracking-wider">{p.name}</h4>
-                        <span className="text-[7px] font-mono text-white/75 uppercase block tracking-widest mt-0.5">EST. HISTÓRIC</span>
+                      {p.imageBox ? (
+                        <img
+                          src={p.imageBox}
+                          alt={p.name}
+                          className="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                        />
+                      ) : (
+                        <>
+                          <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/5 to-white/0" />
+                          <span className="text-4xl text-white/10 group-hover:scale-125 transition-transform duration-300 font-bold select-none absolute inset-0 flex items-center justify-center">
+                            ⚜️
+                          </span>
+                        </>
+                      )}
+
+                      {/* Overlay con nombre del perfume */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+                      <div className="relative z-10 p-3 w-full">
+                        <div className="inline-block mb-1">
+                          <span className="bg-[#1C1714]/80 px-2 py-0.5 rounded text-[8px] font-mono tracking-widest text-[#FAF7F2] border border-white/5">
+                            CLAVE 3D
+                          </span>
+                        </div>
+                        <h4 className="text-sm font-black text-white uppercase tracking-wider leading-tight">{p.name}</h4>
+                        <span className="text-[7px] font-mono text-white/75 uppercase block tracking-widest mt-0.5">EST. HISTÓRICO</span>
                       </div>
                     </div>
 
@@ -323,6 +277,63 @@ export default function App() {
             </div>
           )}
         </section>
+
+        {/* HERO COVER STAGE */}
+        <section className="relative rounded-3xl overflow-hidden mb-12 bg-[#FAF6EE] border border-[#DECFC0] p-8 md:p-12 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-8 shadow-sm">
+          <div className="absolute top-0 left-0 w-96 h-96 bg-[#8E7860]/5 rounded-full blur-3xl pointer-events-none" />
+          
+          <div className="max-w-xl">
+            <span className="text-[9px] font-black tracking-widest text-[#8E7860] uppercase bg-[#8E7860]/10 px-3.5 py-1.5 rounded-full inline-block mb-4 border border-[#8E7860]/20">
+              ⚜️ Perfumes de Diseñador & Muestras Fraccionadas
+            </span>
+            <h2 className="text-3xl md:text-5xl font-black text-[#2E251E] leading-none tracking-tight mb-4">
+              La Esencia del Lujo, <br className="hidden md:block" /> a tu Alcance
+            </h2>
+            <p className="text-sm text-[#5C4D40] leading-relaxed mb-6">
+              Explora místicas y legendarias fragancias en envase tradicional completo, o adquiérelas en cómodas porciones <strong className="text-[#8E7860]">{portionName}</strong> preparadas asépticamente bajo estándares de alta clase. Lujo accesible y con total garantía.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
+              <div className="bg-white/60 p-3 rounded-2xl border border-[#DECFC0]">
+                <div className="text-[#4E6254] font-bold text-xs uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                  <ShieldCheck className="w-3.5 h-3.5 text-[#4E6254]" /> 100% Auténtico
+                </div>
+                <p className="text-[10px] text-[#7A6D60]">Líquidos originales extraídos de forma directa.</p>
+              </div>
+              <div className="bg-white/60 p-3 rounded-2xl border border-[#DECFC0]">
+                <div className="text-[#8E7860] font-bold text-xs uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                  <MapPin className="w-3.5 h-3.5" /> Entregas Seguras
+                </div>
+                <p className="text-[10px] text-[#7A6D60]">Envíos programados ó entrega resguardada.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white border border-[#DECFC0] rounded-3xl p-6 w-full max-w-sm flex flex-col gap-4 shadow-sm">
+            <h3 className="text-xs uppercase tracking-widest text-[#8C7B6E] font-bold pb-2 border-b border-[#EBE4D5]">
+              💬 Asesoría y Consultas
+            </h3>
+            <p className="text-xs text-[#5C4D3E] leading-relaxed">
+              ¿Quieres un catálogo en PDF, buscas una fragancia específica de nicho que no está listada, o deseas coordinar un pedido al instante? 
+            </p>
+            <a 
+              href={`https://wa.me/${contactPhone.replace(/\D/g, "")}`}
+              target="_blank"
+              rel="noreferrer"
+              className="bg-[#3F5144] hover:bg-[#2C3B30] text-[#FAF7F2] font-semibold tracking-wider uppercase py-3.5 rounded-xl transition-colors flex items-center justify-center gap-2 text-[11px] font-bold"
+            >
+              <MessageSquare className="w-3.5 h-3.5 fill-current" />
+              Chatear Directo por WhatsApp
+            </a>
+          </div>
+        </section>
+
+        {/* DECANT EDUCATIONAL EXPLAINER */}
+        <DecantsExplainer 
+          portionName={portionName} 
+          perfumes={perfumes}
+          onSelectPerfume={(perfume) => setSelectedPerfume(perfume)}
+        />
 
       </main>
 

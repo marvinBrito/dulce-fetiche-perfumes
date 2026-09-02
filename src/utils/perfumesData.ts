@@ -168,7 +168,7 @@ export const INITIAL_PERFUMES: Perfume[] = [
     bottleColor: "linear-gradient(135deg, rgba(120, 53, 15, 0.5) 0%, rgba(69, 26, 3, 0.3) 100%)",
     accentColor: "#78350f",
     rating: 4.8,
-    imageBox: "https://img.jomashop.com/cdn-cgi/image/width=546,height=546,type=auto,quality=60/images/products/sports-and-outdoors/lattafa-unisex-pride-ajwaa-edp-spray-3-0-oz-fragrances-6290360592176.jpg",
+    imageBox: "https://www.lattafa-usa.com/cdn/shop/files/1_300f8c2f-6946-429a-a28e-e1e962f45061.png?v=1749363920",
     imageBottle: "https://http2.mlstatic.com/D_Q_NP_970605-MLU72068474386_102023-O.webp",
     imageDecant: "https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=600&q=80"
   },
@@ -336,7 +336,7 @@ export const INITIAL_PERFUMES: Perfume[] = [
     bottleColor: "linear-gradient(135deg, rgba(88, 28, 135, 0.45) 0%, rgba(59, 7, 100, 0.25) 100%)",
     accentColor: "#581c87",
     rating: 4.9,
-    imageBox: "https://perfun.pl/wp-content/uploads/2023/07/BADEE-AL-OUD-AMETHYST-BOX.jpg",
+    imageBox: "https://www.lattafa-usa.com/cdn/shop/files/Badee-Al-Oud-Amethyst-1.png?v=1747422428",
     imageBottle: "https://maisonarabia.com.pe/cdn/shop/files/BADEE.webp?v=1758919772",
     imageDecant: "https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=600&q=80"
   },
@@ -552,7 +552,7 @@ export const INITIAL_PERFUMES: Perfume[] = [
     bottleColor: "linear-gradient(135deg, rgba(202, 138, 4, 0.5) 0%, rgba(124, 45, 18, 0.3) 100%)",
     accentColor: "#ca8a04",
     rating: 4.9,
-    imageBox: "https://images-cdn.ubuy.co.in/68674cfda92da37f5100fad6-khamrah-by-lattafa-edp-perfume-cologne.jpg",
+    imageBox: "https://www.lattafa-usa.com/cdn/shop/files/Khamrah-1_0ffa4f52-30e3-4dea-9399-9bae4b8cb4af.png",
     imageBottle: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6onTTU13SyuhL8H3f0_qhrXf0oPL_FqCPMfjvQGuijukdjE70xFgtDHj_&s=10",
     imageDecant: "https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=600&q=80"
   },
@@ -724,7 +724,7 @@ export const INITIAL_PERFUMES: Perfume[] = [
     bottleColor: "linear-gradient(135deg, rgba(234, 179, 8, 0.45) 0%, rgba(202, 138, 4, 0.25) 100%)",
     accentColor: "#eab308",
     rating: 4.8,
-    imageBox: "https://www.jaiperfumeria.com/wp-content/uploads/2023/08/Maison-Alhambra-Karat-eau-de-parfum-100-ml.-Unisex.jpg",
+    imageBox: "https://media.parfumo.com/perfumes/23/23a97f_karat-maison-alhambra_1200.jpg",
     imageBottle: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWogylKrDighTvfDjW9YEyG1Ye5vkXIPy10TojCLCNvA&s",
     imageDecant: "https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=600&q=80"
   },
@@ -916,7 +916,7 @@ export const INITIAL_PERFUMES: Perfume[] = [
     bottleColor: "linear-gradient(135deg, rgba(244, 114, 182, 0.4) 0%, rgba(219, 39, 119, 0.2) 100%)",
     accentColor: "#f472b6",
     rating: 4.8,
-    imageBox: "https://fragarabic.com/cdn/shop/files/Yara_Candy_Lattafa_Eau_de_Parfum_Para_Mujer_con_su_caja.webp?v=1740855277&width=2048",
+    imageBox: "https://www.lattafa-usa.com/cdn/shop/files/Yara-Candy-1_86796aee-3226-4653-ba72-dd51d747c7f4.png?v=1747416617",
     imageBottle: "https://lattafa.com/wp-content/uploads/2024/09/Yara-Candy-Bottle.png",
     imageDecant: "https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=600&q=80"
   },
@@ -1036,7 +1036,7 @@ export const INITIAL_PERFUMES: Perfume[] = [
     bottleColor: "linear-gradient(135deg, rgba(2, 132, 199, 0.4) 0%, rgba(3, 105, 161, 0.2) 100%)",
     accentColor: "#0284c7",
     rating: 4.8,
-    imageBox: "https://www.rioperfumes.co.za/cdn/shop/files/IMG_20250722_130217.webp?v=1762793727&width=1943",
+    imageBox: "https://armaf.com/cdn/shop/files/armafislandbliss.png",
     imageBottle: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2TakWYwxQVUcAnDxYfEZujGUQj3nSrayiJL67ua2gdw&s=10",
     imageDecant: "https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=600&q=80"
   },
@@ -1180,7 +1180,7 @@ export const INITIAL_PERFUMES: Perfume[] = [
     bottleColor: "linear-gradient(135deg, rgba(21, 128, 61, 0.3) 0%, rgba(124, 45, 18, 0.2) 100%)",
     accentColor: "#15803d",
     rating: 4.9,
-    imageBox: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUfFNxn8yUmKmidBR-WhAy0nCQp4deBdBbRB6hr5qJGQ&s",
+    imageBox: "https://www.lattafa-usa.com/cdn/shop/files/Asad-1_ceed76c7-7a80-46b3-b372-68cc309137f4.png",
     imageBottle: "https://lmd.com.co/cdn/shop/files/lattafa_eclaire_pistache_eau_de_parfum.webp?v=1759235592&width=1445",
     imageDecant: "https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=600&q=80"
   },
@@ -1568,7 +1568,7 @@ export const INITIAL_PERFUMES: Perfume[] = [
     bottleColor: "linear-gradient(135deg, rgba(24, 24, 27, 0.5) 0%, rgba(245, 158, 11, 0.25) 100%)",
     accentColor: "#f59e0b",
     rating: 4.9,
-    imageBox: "https://www.artesaniabasma.com/5363-thickbox_default/perfume-asad-hombre-lataffa-100ml.jpg",
+    imageBox: "https://http2.mlstatic.com/D_NQ_NP_910614-MLA112334326835_052026-O.webp",
     imageBottle: "https://orijentalnimirisi.rs/wp-content/uploads/2022/10/Lattafa-asad-bottle.jpg",
     imageDecant: "https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=600&q=80"
   },
