@@ -20,13 +20,11 @@ export default function App() {
     INITIAL_PERFUMES.map((p) => {
       if (!p.hasDecant || !p.priceDecant) return p;
       const price10 = p.priceDecant;
-      const price5 = price10 === 8.99 ? 3.99 : price10 === 9.99 ? 4.99 : price10 === 10.99 ? 5.99 : price10 === 11.99 ? 5.99 : price10 === 13.99 ? 6.99 : 4.99;
       const price3 = price10 === 8.99 ? 1.99 : price10 === 9.99 ? 2.99 : price10 === 10.99 ? 2.99 : price10 === 11.99 ? 3.99 : price10 === 13.99 ? 4.99 : 2.99;
       return {
         ...p,
         decantOptions: [
           { ml: 10, price: price10 },
-          { ml: 5, price: price5 },
           { ml: 3, price: price3 }
         ]
       };
